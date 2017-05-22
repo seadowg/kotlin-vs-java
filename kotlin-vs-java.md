@@ -1,6 +1,6 @@
 ## Null safety
 
-Kotlin adds null safety into into it's type system as a first class
+Kotlin adds null safety into into its type system as a first class
 concept. The following would not compile:
 
 ```kotlin
