@@ -27,9 +27,9 @@ We also have syntactical sugar that makes this easier for us:
 
 ```kotlin
 val maybe: String? = null
-val words: Int? = string?.split(" ")?.length
+val words: Int? = maybe?.split(" ")?.size
 
-println("The string contains " + (length :? 0) + " words")
+println("The string contains " + (words ?: 0) + " words")
 ```
 This adds significant advantages over Java as it forces us to make decisions over the nullability of our variables and return types. It also forces us to deal with the consequences of nullable value explicitly rather than letting them sneak into production.
 
